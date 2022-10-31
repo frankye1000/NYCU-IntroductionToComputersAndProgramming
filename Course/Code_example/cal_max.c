@@ -2,23 +2,23 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-void swap(int *i, int *j){
-    int temp = *i;
-    *i=*j;
-    *j=temp;
+void max(int *a, int *b, int *m){
+    if(*a>*b){
+        *m=*a;
+    }else{
+        *m=*b;
+    }
 }
 
 
 int main(){
-    int small,big,*a,*b;
+    int small,big,*a,*b, c;
     printf("input=\n");
     scanf("%d %d", &small, &big);
     a=&small;
     b=&big;
 
-    swap(a,b);
-    printf("%d %d", small, big);
-
-
+    max(a,b,&c);
+    printf("MAX= %d", c);
 
 }
