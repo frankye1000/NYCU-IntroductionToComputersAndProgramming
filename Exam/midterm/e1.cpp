@@ -22,7 +22,5 @@ int main()
 
 void dec_to_oct(int num)
 {   
-    
     printf("0%o\n",num);
-   
 }

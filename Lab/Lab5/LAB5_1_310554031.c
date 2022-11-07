@@ -2,17 +2,16 @@
 
 void pay_amount(int dollars, int *thousand, int *five_hundred, int *one_hundred, int *tens, int *fives, int *ones)
 {
-    // int t=*thousand, f=*five_hundred, o=*one_hundred, ts=*tens, fi=*fives, on=*ones;
     *thousand     = dollars/1000;
     dollars      %= 1000;
     *five_hundred = dollars/500;
-    dollars       %= 500;
+    dollars      %= 500;
     *one_hundred  = dollars/100;
-    dollars       %= 100;
+    dollars      %= 100;
     *tens         = dollars/10;
-    dollars       %= 10;
+    dollars      %= 10;
     *fives        = dollars/5;
-    dollars       %= 5;
+    dollars      %= 5;
     *ones         = dollars/1;
 }
 

@@ -2,22 +2,17 @@
 
 int *gcd_iterative(int *m, int *n, int *ans)
 {
-    int t1=*m;
-    int t2=*n;
-
-    while(t1 % t2 != 0){
-        int temp = t2;
-        t2=t1%t2;
-        t1=temp;
-        //printf("m= %d ,n=%d",m,n);
+    while(*m % *n != 0){
+        int temp = *n;
+        *n = *m % *n;
+        *m = temp;
     }
-    *ans=t2;
+    *ans=*n;
     return ans;
 }
 
 int main()
 {   
-    
     int testcase;
     scanf("%d", &testcase);
     

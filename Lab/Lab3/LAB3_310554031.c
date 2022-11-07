@@ -21,10 +21,10 @@
     printf("Enter the number of rows : ");
     int rows;
     scanf("%d", &rows);
-    int c=1;
-    for(int i=1;i<=rows;i++){
-        for(int j=1;j<=i;j++){
-            printf("%3d ",c);
+    int c = 1;
+    for(int i=1; i<=rows; i++){
+        for(int j=1; j<=i; j++){
+            printf("%3d ", c);
             c++;
         }
         printf("\n");
@@ -37,9 +37,9 @@
     int o;
     while(printf("Expression:") && scanf("%lld %c %d",&t, &defg, &o)){
         if(defg=='+'){
-            printf("%lld\n",t+o);
+            printf("%lld\n", t+o);
         }else if(defg=='-'){
-            printf("%lld\n",t-o);
+            printf("%lld\n", t-o);
         }else{
             break;
         }
@@ -52,16 +52,14 @@
     int ot;
     while(printf("Expression:") && scanf("%u %c %d",&tt, &defgt, &ot)){
         if(defgt=='+'){
-            printf("%u\n",tt+ot);
+            printf("%u\n", tt+ot);
         }else if(defgt=='-'){
-            printf("%u\n",tt-ot);
+            printf("%u\n", tt-ot);
         }else{
             break;
         }
     }
 
-
-    
     /************ Bonus : Pyramid ***********/
 
     printf("Input pyramid's row : ");

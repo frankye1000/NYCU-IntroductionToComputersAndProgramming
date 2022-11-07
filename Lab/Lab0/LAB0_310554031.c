@@ -8,7 +8,6 @@ int main() {
 	printf("Enter your student ID: ");
 	scanf("%d", &studentID);
 
-
 	printf("Hi, %d\n", studentID);
 
 	system("pause");
