@@ -24,8 +24,10 @@ int main(){
         // LP = Largest(A,size);
         // printf("%d", *LP);
         Sort(A,size);
-
-
+        
+        for(int i=0;i<size;i++){
+            printf("[%d] ",A[i]);
+        }
 
     }
 
@@ -65,9 +67,7 @@ void Sort(int *arr, int size){
         SS--;
     }
 
-    for(int i=0;i<size;i++){
-        printf("[%d] ",arr[i]);
-    }
+    
 
 
 
