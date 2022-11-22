@@ -1,0 +1,126 @@
+// 測資要一段一段複製，因為段與段中間有空行
+5
+push .
+push e
+push m
+push o
+top
+push s
+push d
+push n
+push a
+push h
+top
+push  
+top
+push m
+push a
+push  
+push I
+clear
+end
+
+empty
+full
+push w
+push o
+push d
+push  
+push i
+push h
+push z
+push  
+push o
+push o
+push b
+push  
+push o
+push W
+clear
+end
+
+empty
+push u
+push c
+push y
+push n
+top
+pop
+pop
+top
+pop
+push t
+top
+pop
+top
+pop
+clear
+end
+
+pop
+pop
+pop
+push a
+empty
+full
+push w
+push o
+push d
+push  
+push i
+push h
+push z
+push  
+push o
+push o
+push b
+push  
+push o
+push W
+clear
+end
+
+empty
+push z
+empty
+full
+push y
+push x
+push w
+push v
+push u
+push t
+push s
+push r
+push q
+push p
+push o
+push n
+push m
+push l
+push k
+push j
+push i
+push h
+push g
+push f
+push e
+push d
+push c
+push b
+push a
+full
+push 9
+push 8
+push 7
+push 6
+full
+push 5
+push 4
+push 3
+full
+push 2
+push 1
+push 0
+clear
+end

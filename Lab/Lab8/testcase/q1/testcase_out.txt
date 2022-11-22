@@ -1,0 +1,30 @@
+oh I am handsome.
+
+The stack is empty.
+The stack is not full
+Wo boo zhi dow
+
+The stack is empty.
+nctu
+
+The stack is empty.
+The stack is empty.
+The stack is empty.
+The stack is not empty.
+The stack is not full
+Wo boo zhi dowa
+
+The stack is empty.
+The stack is not empty.
+The stack is not full
+The stack is not full
+The stack is full.
+The stack is full, can not push item anymore.
+The stack is full, can not push item anymore.
+The stack is full, can not push item anymore.
+The stack is full.
+The stack is full, can not push item anymore.
+The stack is full, can not push item anymore.
+The stack is full, can not push item anymore.
+6789abcdefghijklmnopqrstuvwxyz
+
