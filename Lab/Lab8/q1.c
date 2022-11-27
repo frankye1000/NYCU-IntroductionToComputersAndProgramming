@@ -84,7 +84,7 @@ void test_stack(char* arr1, bool* endFlag)
         *(arr2+j)='\0';
         push(*arr2);
     }
-    else if(strcmp(arr1, "pop")==0) // got push command
+    else if(strcmp(arr1, "pop")==0) // got pop command
     {
         pop();
     }
