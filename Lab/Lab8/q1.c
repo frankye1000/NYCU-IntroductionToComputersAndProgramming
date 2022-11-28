@@ -5,12 +5,12 @@
 
 void read_input(char*);
 void test_stack(char*, bool*);
-
+int count = 0;
 int main()
 {
     int numTestcase;
     bool endFlag = false;
-    char arr1[MAX_LEN] = {'\0'}; // '\0' is null character
+    
 
     scanf("%d\n", &numTestcase);
     
@@ -18,6 +18,7 @@ int main()
     {
         endFlag = false;
         do{
+            char arr1[MAX_LEN] = {'\0'}; // '\0' is null character
             read_input(arr1);
             test_stack(arr1, &endFlag);
         }while(!endFlag);
@@ -29,11 +30,14 @@ int main()
 void read_input(char *arr1)
 {
     int ch,i=0,j=0;
+    count = 0;
     while((ch = getchar())!='\n' && ch!=' '){
         *(arr1+i) = ch;
         i++;
+        count++;
     }
     *(arr1+i)='\0';
+    
 }
 
 void test_stack(char* arr1, bool* endFlag)
@@ -41,8 +45,11 @@ void test_stack(char* arr1, bool* endFlag)
     char ch;
     char item;
     bool is_push = false;
-
-    if(strcmp(arr1, "empty")==0) // got "empty" command
+    //printf("sizeof(arr1)=%d\n",sizeof(arr1));
+    if (count==0){
+        
+    }
+    else if(strcmp(arr1, "empty")==0) // got "empty" command
     {
         if(empty()) 
             printf("The stack is empty.\n"); 
@@ -61,7 +68,7 @@ void test_stack(char* arr1, bool* endFlag)
         if(top()=='-') 
             printf("The stack is empty\n");
         else 
-            printf("%c\n", top());   
+            printf("%c", top());   
     }
     else if(strcmp(arr1, "clear")==0) //got "clear" command
     {
