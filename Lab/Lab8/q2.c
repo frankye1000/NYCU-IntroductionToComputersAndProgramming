@@ -41,7 +41,6 @@ void reverse_str(char * str)
         i++;
     }
     //printf("str= [%s]\n", str);
+    assert(i<MAX_LEN);    // assert 
     clear();
-    assert(i<MAX_LEN);
-
 }
