@@ -3,16 +3,19 @@
 #include <string.h>
 #define MAX_LEN 1000
 
-struct ListNode {
+struct ListNode 
+{
     int val;
     struct ListNode *next;
  };
 typedef struct ListNode Node;
 
-struct ListNode* printList(struct ListNode* list) {
+struct ListNode* printList(struct ListNode* list) 
+{
     struct ListNode *p = list;
 
-    while(p) {
+    while(p) 
+    {
         printf("%d ",p->val);
         p = p->next;
     }
@@ -26,22 +29,29 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
 
     int i=0;
     Node *first,*current,*previous;
-    while(L1 && L2){
+    while(L1 && L2)
+    {
         // 創新node
         current = (Node *)malloc(sizeof(Node));
         
         // 比大小
-        if(L1->val > L2->val){
+        if(L1->val > L2->val)
+        {
             current->val=L2->val;
             L2 = L2->next;
-        }else{
+        }
+        else
+        {
             current->val=L1->val;
             L1 = L1->next;
         }
 
-        if(i==0){  // 第1個node
+        if(i==0)
+        {  // 第1個node
             first=current;
-        }else{
+        }
+        else
+        {
             previous->next=current;
         }
         current->next=NULL;
@@ -52,9 +62,7 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
     // printList(first);
         
     if(L2)
-    {
-        //printf("OK2\n");
-        // 清空L2
+    {   // 清空L2
         while(L2)
         {
             // 創新node
@@ -77,7 +85,6 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
 
     if(L1)
     {
-        //printf("OK1\n");
         //清空L1
         while(L1)
         {
@@ -97,8 +104,6 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
             L1=L1->next;
         }
     }
-    // printf("first=======");
-    // printList(first);
     return first;
 }
 
@@ -107,22 +112,14 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2) {
 void read_input(char *arr)
 {
     int ch,i=0;
-    while((ch = getchar())!='\n'){
+    while((ch = getchar())!='\n')
+    {
         *(arr+i) = ch;
         i++;
     }
     *(arr+i)='\0';
-    
 }
-void freeList(Node *first){
- Node *current,*tmp;
- current=first;
- while(current!=NULL){
-  tmp=current;
-  current=current->next;
-  free(tmp);
- }
-}
+
 
 
 int main(){
@@ -130,8 +127,6 @@ int main(){
     char arr2[MAX_LEN] = {'\0'};
     read_input(arr1);
     read_input(arr2);
-    //printf("arr1=%s\n",arr1);
-    //printf("arr2=%s\n",arr2);
     const char s[2] = " ";
     char *token;
     
@@ -181,7 +176,6 @@ int main(){
     
     // 比較
     printList(mergeTwoLists(first1,first2));
-
 
     return 0;
 }
