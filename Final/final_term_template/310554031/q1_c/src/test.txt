@@ -1,0 +1,4 @@
+This book is a good book.
+
+replace book tiger
+replace good bad
