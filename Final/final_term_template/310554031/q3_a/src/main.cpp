@@ -18,15 +18,13 @@ int week(int year, int month, int day){
     return d0;
 }
 
-/*
-處理一般 case
-*/
+/*處理一般 case*/
 void sample(char* commend){
     int month = 0;
     int year  = 0;
     int day   = 0;
 
-    char Week[20]={'\0'};
+    //char Week[20]={'\0'};
     const char s2[2] = "/";
     char *token;
 
@@ -46,15 +44,12 @@ void sample(char* commend){
     print_week(w);
 }
 
-/*
-處理ROC case
-*/
+/*處理ROC case*/
 void ROC_sample(char* commend){
     int month = 0;
     int year  = 0;
     int day   = 0;
 
-    char Week[20]={'\0'};
     const char s1[2] = " ";
     const char s2[2] = "/";
     char *token;
@@ -77,9 +72,7 @@ void ROC_sample(char* commend){
     print_week(w);
 }
 
-/*
-讀檔
-*/
+/*讀檔*/
 int read_input(char *commend){
     int ch,i=0;
     while((ch = getchar())!='\n'){
@@ -92,56 +85,52 @@ int read_input(char *commend){
     return 1;
 }
 
-/*
-print月份
-*/
+/*print月份*/
 void print_month(int month){
     switch (month){
-    case 1:
-        printf("January ");
-        break;
-    case 2:
-        printf("February ");
-        break;
-    case 3:
-        printf("March ");
-        break;
-    case 4:
-        printf("April ");
-        break;
-    case 5:
-        printf("May ");
-        break;
-    case 6:
-        printf("June ");
-        break;
-    case 7:
-        printf("July ");
-        break;
-    case 8:
-        printf("Auguest ");
-        break;
-    case 9:
-        printf("September ");
-        break;
-    case 10:
-        printf("October ");
-        break;
-    case 11:
-        printf("November ");
-        break;
-    case 12:
-        printf("December ");
-        break;
-    default:
-        break;
+        case 1:
+            printf("January ");
+            break;
+        case 2:
+            printf("February ");
+            break;
+        case 3:
+            printf("March ");
+            break;
+        case 4:
+            printf("April ");
+            break;
+        case 5:
+            printf("May ");
+            break;
+        case 6:
+            printf("June ");
+            break;
+        case 7:
+            printf("July ");
+            break;
+        case 8:
+            printf("Auguest ");
+            break;
+        case 9:
+            printf("September ");
+            break;
+        case 10:
+            printf("October ");
+            break;
+        case 11:
+            printf("November ");
+            break;
+        case 12:
+            printf("December ");
+            break;
+        default:
+            break;
     }
 }
 
 
-/*
-print星期幾
-*/
+/*print星期幾*/
 void print_week(int w){
     switch (w)
     {
